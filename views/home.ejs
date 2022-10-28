@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Steam Investments</title>
+
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="stylesheet" href="stylesheets/style.css">
+	</head>
+	<body>
+		<div>
+			<table>
+				<thead>
+					<tr>Name</tr>
+					<tr>Quantity</tr>
+					<tr>Price</tr>
+					<tr>Revenue</tr>
+				</thead>
+				<tbody>
+					<% itemList.forEach((item) => { %>
+	
+					<tr>
+						<td><%= item.name %></td>
+						<td><%= item.quantity %></td>
+						<td><%= item.price %></td>
+						<td><%= item.quantity * item.price %></td>
+					</tr>
+	
+					<% }) %>
+				</tbody>
+			</table>
+		</div>
+
+
+		<script type="text/javascript" src="/javascripts/script.js"></script>
+	</body>
+</html>
